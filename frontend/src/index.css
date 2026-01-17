@@ -1,0 +1,136 @@
+:root {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Responsive Table Wrapper */
+.ant-table-wrapper {
+  overflow-x: auto;
+}
+
+/* Responsive Form Items */
+@media (max-width: 768px) {
+  .ant-form-item {
+    margin-bottom: 16px;
+  }
+
+  .ant-modal {
+    max-width: calc(100vw - 32px);
+    margin: 16px auto;
+  }
+
+  .ant-modal-body {
+    padding: 16px;
+  }
+}
+
+/* Touch-friendly buttons */
+@media (max-width: 768px) {
+  .ant-btn {
+    min-height: 40px;
+    padding: 8px 16px;
+  }
+
+  .ant-btn-sm {
+    min-height: 32px;
+  }
+
+  .ant-btn-lg {
+    min-height: 48px;
+  }
+}
+
+/* Responsive Pagination */
+@media (max-width: 768px) {
+  .ant-pagination {
+    text-align: center;
+  }
+
+  .ant-pagination-options {
+    display: none;
+  }
+}
+
+/* Responsive Space */
+@media (max-width: 768px) {
+  .ant-space-vertical {
+    gap: 12px !important;
+  }
+}
+
+/* Responsive Cards */
+@media (max-width: 768px) {
+  .ant-card {
+    margin-bottom: 16px;
+  }
+
+  .ant-card-head {
+    padding: 12px 16px;
+  }
+
+  .ant-card-body {
+    padding: 16px;
+  }
+
+  .ant-card-small .ant-card-body {
+    padding: 12px;
+  }
+}
+
+/* Responsive Descriptions */
+@media (max-width: 768px) {
+  .ant-descriptions-item-label,
+  .ant-descriptions-item-content {
+    padding: 8px 12px;
+  }
+}
+
+/* Responsive Input */
+@media (max-width: 768px) {
+  .ant-input,
+  .ant-input-number,
+  .ant-select-selector,
+  .ant-picker {
+    font-size: 16px !important; /* Prevents zoom on iOS */
+  }
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

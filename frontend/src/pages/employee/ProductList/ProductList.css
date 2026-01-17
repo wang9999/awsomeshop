@@ -1,0 +1,38 @@
+.product-list-container {
+  width: 100%;
+}
+
+.filter-card {
+  margin-bottom: 24px;
+}
+
+.filter-label {
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .filter-card {
+    margin-bottom: 16px;
+  }
+
+  .filter-card .ant-card-body {
+    padding: 16px;
+  }
+
+  .filter-label {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .filter-card .ant-card-body {
+    padding: 12px;
+  }
+
+  .filter-label {
+    font-size: 13px;
+  }
+}
