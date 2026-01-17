@@ -291,7 +291,7 @@ npm run test
 
 ## 📦 部署
 
-### Docker部署（推荐）
+### 本地开发部署（Docker）
 
 项目包含完整的Docker配置：
 
@@ -314,23 +314,51 @@ docker-compose down -v
 
 详细的Docker使用说明请查看 `DOCKER_SETUP.md`
 
-### 生产环境部署
+### 云端部署（Railway + Vercel）
 
-1. 构建后端
-```bash
-cd backend/src/AWSomeShop.API
-dotnet publish -c Release -o ./publish
-```
+#### ✅ 已完成：GitHub 推送
 
-2. 构建前端
-```bash
-cd frontend
-npm run build
-```
+代码已推送到 GitHub：
+- **仓库地址**: https://github.com/wang9999/awsomeshop
+- **分支**: main
 
-3. 配置Nginx反向代理
-4. 配置HTTPS证书
-5. 启动服务
+#### 📋 下一步：Railway + Vercel 部署
+
+**Railway 部署后端**（30分钟）
+1. 访问 https://railway.app
+2. 使用 GitHub 登录
+3. 创建新项目，选择 wang9999/awsomeshop 仓库
+4. 添加 MySQL 和 Redis 数据库
+5. 配置后端服务和环境变量
+6. 部署并获取后端 URL
+
+**Vercel 部署前端**（10分钟）
+1. 访问 https://vercel.com
+2. 使用 GitHub 登录
+3. 导入 wang9999/awsomeshop 仓库
+4. 配置构建设置和环境变量
+5. 部署并获取前端 URL
+
+**详细部署指南**：
+- `NEXT_STEPS.md` - 下一步详细指南
+- `RAILWAY_VERCEL_DEPLOY.md` - 完整部署指南
+- `DEPLOYMENT_CHECKLIST.md` - 快速检查清单
+- `QUICK_REFERENCE.md` - 快速参考卡片
+
+**费用说明**：
+- GitHub: 完全免费
+- Vercel: 完全免费
+- Railway: 第1-2个月免费（$5额度），之后约$3-5/月
+
+### 其他部署方案
+
+**Render + Vercel**（完全免费）
+- 详见 `RENDER_VERCEL_FREE_DEPLOY.md`
+- 需要将 MySQL 改为 PostgreSQL
+
+**ngrok**（临时分享）
+- 详见 `DEPLOYMENT_OPTIONS.md`
+- 需要保持电脑运行
 
 ## 📖 文档
 
