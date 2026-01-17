@@ -1,0 +1,20 @@
+# Railway 环境变量配置
+# 复制以下内容到 Railway 的 Variables 标签
+
+# 数据库连接（使用 Railway 内部变量）
+ConnectionStrings__DefaultConnection=Server=${{MySQL.MYSQLHOST}};Port=${{MySQL.MYSQLPORT}};Database=${{MySQL.MYSQLDATABASE}};User=${{MySQL.MYSQLUSER}};Password=${{MySQL.MYSQLPASSWORD}}
+
+# JWT 配置
+Jwt__SecretKey=AWSomeShop2024SecretKeyForJWTTokenGeneration32CharactersLong
+Jwt__Issuer=AWSomeShop
+Jwt__Audience=AWSomeShop
+
+# Redis 配置
+Redis__Configuration=${{Redis.REDIS_URL}}
+
+# CORS 配置（稍后更新为 Vercel 域名）
+CORS__Origins=https://your-app.vercel.app
+
+# 环境配置
+ASPNETCORE_ENVIRONMENT=Production
+ASPNETCORE_URLS=http://0.0.0.0:$PORT

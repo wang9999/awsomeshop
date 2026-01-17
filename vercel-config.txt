@@ -1,0 +1,20 @@
+# Vercel 前端构建配置
+# 在 Vercel 项目设置中配置以下内容
+
+## Framework Preset
+Vite
+
+## Root Directory
+frontend
+
+## Build Command
+npm run build
+
+## Output Directory
+dist
+
+## Install Command (默认)
+npm install
+
+## Node.js Version (推荐)
+18.x

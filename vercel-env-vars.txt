@@ -1,0 +1,8 @@
+# Vercel 环境变量配置
+# 复制以下内容到 Vercel 的 Environment Variables
+
+# API Base URL（替换为你的 Railway 后端 URL）
+VITE_API_BASE_URL=https://你的railway后端URL/api
+
+# 示例：
+# VITE_API_BASE_URL=https://awsomeshop-production.up.railway.app/api

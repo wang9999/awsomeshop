@@ -1,0 +1,14 @@
+# Railway 后端服务配置
+# 在 Railway Settings 中配置以下内容
+
+## Root Directory
+backend/src/AWSomeShop.API
+
+## Build Command
+dotnet publish -c Release -o out
+
+## Start Command
+dotnet out/AWSomeShop.API.dll
+
+## Watch Paths (可选)
+backend/**
